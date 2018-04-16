@@ -1,0 +1,16 @@
+#' prep_bodymaps
+#' converts a single charcter vector of bodymaps into a list of character vectors, each a bodymap
+#'
+#' @param maps a character vector containing the endorsed bodymap segments of patients in csv form
+#'
+#' @return a list of character vectors, where each vector contains the patient's endorsed segments
+#'
+#' @examples
+#' prep_bodymaps(BODYMAP_CSV)
+#' @export
+
+prep_bodymaps <- function(maps){
+  # list containing all of the bodymap regions indicated by each patient, by each patient
+  segment.list <- str_split(maps, ",")
+  return(segment.list)
+}
