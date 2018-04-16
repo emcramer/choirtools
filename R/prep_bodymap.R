@@ -11,6 +11,6 @@
 
 prep_bodymaps <- function(maps){
   # list containing all of the bodymap regions indicated by each patient, by each patient
-  segment.list <- str_split(maps, ",")
+  segment.list <- strsplit(maps, ",")
   return(segment.list)
 }

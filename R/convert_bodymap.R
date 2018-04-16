@@ -1,45 +1,12 @@
-# Function convert_bodymap
-#   Converts the different male/female CHOIR BodyMap numberings to the male numberings as a standard
-#   Author: Eric Cramer <emcramer@stanford.edu>
+#' convert_bodymap
+#' Helper function to convert a single bodymap
+#' @param segments a character vector containing segment numbers as individual strings in the vector that need to be adjusted/standardized
+#' @return a character vector containing standardized segment numbers as individual strings in the vector
+#'
+#' @examples
+#' convert_bodymap(FEMALE_BODYMAP)
+#' @export
 
-## prep_bodymaps
-# converts a single charcter vector of bodymaps into a list of character vectors, each a bodymap
-# Parameters:
-#   maps: a character vector containing the endorsed bodymap segments of patients in csv form
-# Return Values:
-#   segment.list: a list of character vectors, where each vector contains the patient's endorsed segments
-
-prep_bodymaps <- function(maps){
-  # list containing all of the bodymap regions indicated by each patient, by each patient
-  segment.list <- str_split(maps, ",") 
-  return(segment.list)
-}
-
-## convert_bodymaps
-# function to convert multiple bodymaps
-# Parameters:
-#   f_maps: a list of character vectors where each character vector is a CHOIR bodymap. Each element in the vector is a segment identification number.
-# Return Values:
-#   maps: a list of character vectors of bodymaps using the male CHOIR bodymap numberings as a standard
-
-convert_bodymaps <- function(f_maps){
-  ret_maps <- list()
-  # iterate through each of the bodymaps in the vector
-  for(i in 1:length(f_maps)){
-    curr_map <- f_maps[[i]]
-    # print("Curr map")
-    # print(curr_map)
-    ret_maps[[i]] <- convert_bodymap(curr_map)
-  }
-  return(ret_maps)
-}
-
-## convert_bodymap
-# Helper function to convert a single bodymap
-# Parameters: 
-#   segments: a character vector containing segment numbers as individual strings in the vector that need to be adjusted/standardized
-# Return Values:
-#   segments: a character vector containing standardized segment numbers as individual strings in the vector
 convert_bodymap <- function(segments){
   if(length(segments) == 0){
     return("")
