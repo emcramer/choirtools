@@ -16,9 +16,6 @@ The goal of choirtools is to provide a set of tools for cleaning and analyzing d
 
 ```r
 devtools::install_github("ericscrum/devtools")
-#> Downloading GitHub repo ericscrum/devtools@master
-#> from URL https://api.github.com/repos/ericscrum/devtools/zipball/master
-#> Installation failed: Not Found (404)
 ```
 
 ## Examples

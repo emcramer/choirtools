@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 The goal of choirtools is to provide a set of tools for cleaning and analyzing data from the Collaborative Health Outcomes Information Registry data base run by the Stanford Pain Clinic. No actual data from the data base is provided in this package. A simulated sample is included for examples and demos.
 
 ## To Install `choirtools`
-```{r installation_info}
+```{r installation_info, eval=FALSE}
 devtools::install_github("ericscrum/devtools")
 ```
 
