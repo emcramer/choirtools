@@ -21,12 +21,14 @@ devtools::install_github("ericscrum/choirtools")
 
 ## Examples
 
-This is a basic example which shows you how to convert mislabeled female bodymaps to a standard for mixed gender analysis (such as examining differences in segment endorsements between men and women).
+This is a basic example which shows you how to convert mislabeled female bodymaps to a standard for mixed gender analysis (such as examining differences in segment endorsements between men and women).  
+
+![Incorrectly labeled bodymaps](img/mislabeled-bodymaps.png)  
 
 
 ```r
 ## basic example code
-# generate example data <- don't do thi if you have data already, read it into R with read.delim
+# generate example data <- don't do this if you have data already, read it into R with read.delim
 GENDER = as.character(c("Male", "Female", "Female"))
 BODYMAP_CSV = as.character(c("112,125","112,113","128,117"))
 cbind(GENDER, BODYMAP_CSV)
