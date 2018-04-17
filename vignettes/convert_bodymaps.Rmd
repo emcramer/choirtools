@@ -1,0 +1,32 @@
+---
+title: "convert_bodymaps"
+author: "Eric Cramer"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The `convert_bodymaps` function converts mislabeled female CHOIR bodymaps to a standard for multiple gender analysis of CHOIR data. 
+
+Given example data:  
+|---|---|
+|GENDER|BODYMAP|
+|Male|112,125|
+|Female|116,117|
+|Female|128,117|
+|---|---|
+  
+The code:
+```{r example}
+
+```
