@@ -26,7 +26,7 @@ This is a basic example which shows you how to convert mislabeled female bodymap
 
 ```r
 ## basic example code
-# generate example data <- don't do thi if you have data already, read it into R with read.delim
+# generate example data <- don't do this if you have data already, read it into R with read.delim
 GENDER = as.character(c("Male", "Female", "Female"))
 BODYMAP_CSV = as.character(c("112,125","112,113","128,117"))
 cbind(GENDER, BODYMAP_CSV)
