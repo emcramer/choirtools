@@ -6,7 +6,7 @@
 #' @return a character vector of bodymaps using the male CHOIR bodymap numberings as a standard. Each bodymap is in csv form
 #'
 #' @examples
-#' convert_bodymaps(BODYMAP_CSV)
+#' convert_bodymaps(as.character(exampledata$BODYMAP_CSV[exampledata$GENDER == 'Female']))
 #' @export
 
 convert_bodymaps <- function(f_maps){

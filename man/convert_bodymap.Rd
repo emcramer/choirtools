@@ -18,5 +18,5 @@ convert_bodymap
 Helper function to convert a single bodymap
 }
 \examples{
-convert_bodymap(FEMALE_BODYMAP)
+convert_bodymap(exampledata[2,2])
 }

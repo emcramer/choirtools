@@ -18,5 +18,5 @@ convert_bodymaps
 function to convert multiple bodymaps
 }
 \examples{
-convert_bodymaps(BODYMAP_CSV)
+convert_bodymaps(as.character(exampledata$BODYMAP_CSV[exampledata$GENDER == 'Female']))
 }

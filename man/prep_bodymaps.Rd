@@ -18,5 +18,5 @@ prep_bodymaps
 converts a single charcter vector of bodymaps into a list of character vectors, each a bodymap
 }
 \examples{
-prep_bodymaps(BODYMAP_CSV)
+prep_bodymaps(as.character(exampledata$BODYMAP_CSV))
 }

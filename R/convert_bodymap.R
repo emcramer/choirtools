@@ -4,7 +4,7 @@
 #' @return a character vector containing standardized segment numbers as individual strings in the vector
 #'
 #' @examples
-#' convert_bodymap(FEMALE_BODYMAP)
+#' convert_bodymap(exampledata[2,2])
 #' @export
 
 convert_bodymap <- function(segments){

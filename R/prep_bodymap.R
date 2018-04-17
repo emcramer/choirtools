@@ -6,7 +6,7 @@
 #' @return a list of character vectors, where each vector contains the patient's endorsed segments
 #'
 #' @examples
-#' prep_bodymaps(BODYMAP_CSV)
+#' prep_bodymaps(as.character(exampledata$BODYMAP_CSV))
 #' @export
 
 prep_bodymaps <- function(maps){
