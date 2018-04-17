@@ -25,13 +25,21 @@ This is a basic example which shows you how to convert mislabeled female bodymap
 
 ```r
 ## basic example code
-
-# load example data
-
-# isolate rows of female patients
+# generate example data
+GENDER = as.character(c("Male", "Female", "Female"))
+BODYMAP_CSV = as.character(c("112,125","112,113","128,117"))
+cbind(GENDER, BODYMAP_CSV)
+#>      GENDER   BODYMAP_CSV
+#> [1,] "Male"   "112,125"  
+#> [2,] "Female" "112,113"  
+#> [3,] "Female" "128,117"
 
 # convert the female bodymaps to a standard
-
-# amend the imported data set with the fixed female records
-
+BODYMAP_CSV[GENDER == "Female"] <- convert_bodymaps(BODYMAP_CSV[GENDER == "Female"])
+testdata <- data.frame(GENDER, BODYMAP_CSV)
+testdata
+#>   GENDER BODYMAP_CSV
+#> 1   Male     112,125
+#> 2 Female     116,117
+#> 3 Female     128,115
 ```
